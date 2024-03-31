@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Matheus Ramalho de Oliveira" />
+  <title>Upload Multiple Files with Node.js Busboy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.min.js" integrity="sha512-Jq1JnVXlkYQOYQpz31qIV/0l67d97J9I6sbILtfiSYX00Isr2zK7XDRmHW8d2iBTwNZfL7sHkHGT0EzLs90jdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Uploading files using Busboy</h3>
+      <form id="form" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">Files</label>
+          <input id="files" name="file" type="file" class="form-control" onchange="showSize()" multiple />
+          <output id="size" class="span"></output>
+          <br />
+          <output id="message" class="span"></output>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-success" />
+          <input type="reset" class="btn btn-danger" />
+          <a class="btn btn-primary float-right" href="https://github.com/kastorcode" role="button" target="_blank">&lt;kastor.code/&gt;</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "upload-multiple-files-busboy-nodejs-frontend",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "clear && npx http-server --cors public"
+  },
+  "author": "<kastor.code/> Matheus Ramalho de Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

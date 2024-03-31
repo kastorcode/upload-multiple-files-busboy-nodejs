@@ -1,0 +1,17 @@
+{
+  "name": "upload-multiple-files-busboy-nodejs-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "clear && node --watch src/index.js"
+  },
+  "author": "<kastor.code/> Matheus Ramalho de Oliveira",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "busboy": "0.3",
+    "pino": "6",
+    "pino-pretty": "4",
+    "socket.io": "3.0"
+  }
+}
